@@ -1,0 +1,127 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 400px; /* Increase the width here */
+    transition: background-color 0.3s ease;
+}
+
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.history {
+    background-color: #f1c40f;
+    color: #333;
+    font-size: 1em;
+    padding: 10px;
+    text-align: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+
+.btn {
+    background-color: #eee;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn:active {
+    background-color: #ccc;
+}
+
+.special {
+    background-color: #f39c12;
+    color: white;
+}
+
+.special:hover {
+    background-color: #e67e22;
+}
+
+.special.double {
+    grid-column: span 2;
+}
+
+.operator {
+    background-color: #3498db;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #2980b9;
+}
+
+.theme-switcher {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dark-theme .calculator {
+    background-color: #333;
+}
+
+.dark-theme .display {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-theme .history {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.dark-theme .btn {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-theme .btn:hover {
+    background-color: #555;
+}
+
+.dark-theme .btn:active {
+    background-color: #666;
+}
+
+.dark-theme .operator {
+    background-color: #2980b9;
+}
+
+.dark-theme .operator:hover {
+    background-color: #1f618d;
+}
